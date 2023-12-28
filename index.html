@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles.css">
+  <title>Player Statistics Comparison</title>
+</head>
+<body>
+
+  <div class="container">
+    <h1>Player Statistics Comparison</h1>
+
+    <!-- Search Bar -->
+    <div class="search-bar">
+      <input type="text" id="playerName" placeholder="Enter player name">
+      <button onclick="addPlayer()">Add Player</button>
+    </div>
+
+    <!-- Filter Dropdowns -->
+    <!-- ... (previous code) ... -->
+
+<!-- Filter Dropdowns -->
+<div class="filters">
+    <label for="startPeriod">Start Period:</label>
+    <select id="startPeriod">
+      <option value="2022">2022</option>
+      <option value="2023">2023</option>
+      <!-- Add more options as needed -->
+    </select>
+  
+    <label for="endPeriod">End Period:</label>
+    <select id="endPeriod">
+      <option value="2022">2022</option>
+      <option value="2023">2023</option>
+      <!-- Add more options as needed -->
+    </select>
+  
+    <!-- Button to toggle visibility of the championship dropdown -->
+    <button onclick="toggleChampionshipDropdown()">select Championships</button>
+  
+    <!-- Championship Dropdown (hidden by default) -->
+    <select id="championshipDropdown" multiple class="hidden">
+      <option value="premierLeague">Premier League</option>
+      <option value="laLiga">La Liga</option>
+      <option value="serieA">Serie A</option>
+      <!-- Add more options as needed -->
+    </select>
+  </div>
+  
+  <!-- ... (previous code) ... -->
+  
+
+    <!-- Player Tables -->
+    <div class="player-tables">
+      <div class="player-table" id="playerTable1"></div>
+      <div class="player-table" id="playerTable2"></div>
+      <div class="player-table" id="playerTable3"></div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
